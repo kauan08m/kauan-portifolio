@@ -3,20 +3,128 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfólio de Kauan, jogador de futebol. Confira meus jogos recentes e entre em contato.">
+    <meta name="keywords" content="Kauan, futebol, atleta, Porto Football, zagueiro, lateral direito, portfólio">
     <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
     <title>Meu Portfólio</title>
 </head>
 <body>
-   <header>
-        <img src="img/IMG_5948.JPG" alt="avatar do Kauan" width="250" height="250" srcset="">
-        <p>Eu sou Kauan</p>
+   <header class="container text-center py-5">
+        <img src="img/Blue Minimalist Instagram Profile Picture.png" alt="Foto de perfil de Kauan, jogador de futebol" class="rounded-circle" width="550" height="300">
+        <p class="mt-3">Eu sou Kauan</p>
         <h1>Eu Jogo Futebol</h1>
-        <p>Eu sou atleta de alto rendimento e atualmente jogo pela Porto Football</p>
+        <p>Sou atleta de alto rendimento e atualmente jogo pela Porto Football.</p>
         <p>Minhas Funções</p>
-        <div>
-            <p>Zagueiro</p>
-            <p>Lateral direito</p>
+        <div class="mb-3">
+            <p class="badge bg-secondary">Zagueiro</p>
+            <p class="badge bg-secondary">Lateral direito</p>
         </div>
     </header> 
+
+    <main class="container">
+        <h3 class="text-center mb-5">Meus Jogos Recentes</h3>
+        <div class="row">
+            <!-- Jogo 1 -->
+            <div class="col-md-4">
+                <div class="card mb-4" style="width: 18rem;">
+                    <img src="img/IMG_5881.JPG" class="card-img-top" width="250" height="225" alt="Imagem do jogo Porto x Noroeste">
+                    <div class="card-body">
+                        <h5 class="card-title">Porto x Noroeste</h5>
+                        <button type="button" class="btn btn-link" data-bs-toggle="modal" data-bs-target="#Modal1">Ver</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Jogo 2 -->
+            <div class="col-md-4">
+                <div class="card mb-4" style="width: 18rem;">
+                    <img src="img/IMG_6169.JPG" class="card-img-top" width="250" height="225" alt="Imagem do jogo Porto x Rio Claro">
+                    <div class="card-body">
+                        <h5 class="card-title">Porto x Rio Claro</h5>
+                        <button type="button" class="btn btn-link" data-bs-toggle="modal" data-bs-target="#Modal2">Ver</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Jogo 3 -->
+            <div class="col-md-4">
+                <div class="card mb-4" style="width: 18rem;">
+                    <img src="img/IMG_5948.JPG" class="card-img-top" width="250" height="225" alt="Imagem do jogo Porto x XV de Jau">
+                    <div class="card-body">
+                        <h5 class="card-title">Porto x XV de Jau</h5>
+                        <button type="button" class="btn btn-link" data-bs-toggle="modal" data-bs-target="#Modal3">Ver</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Modais -->
+    <!-- Modal 1: Porto x Noroeste -->
+    <div class="modal fade" id="Modal1" tabindex="-1" aria-labelledby="Modal1Label" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="Modal1Label">Porto x Noroeste</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Detalhes do jogo Porto x Noroeste: A partida foi realizada no dia 10 de março de 2025, no Estádio Municipal de Porto. O jogo terminou em 3-1 para o Porto.</p>
+                    <p>Comentários: Grande atuação da defesa, onde consegui garantir a vitória com uma performance sólida e sem falhas.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 2: Porto x Rio Claro -->
+    <div class="modal fade" id="Modal2" tabindex="-1" aria-labelledby="Modal2Label" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="Modal2Label">Porto x Rio Claro</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Detalhes do jogo Porto x Rio Claro: A partida ocorreu em 25 de março de 2025. Porto venceu por 2-0, com um desempenho defensivo impecável.</p>
+                    <p>Comentários: A defesa foi extremamente sólida durante o jogo, com destaque para a segurança na área e a organização tática.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 3: Porto x XV de Jau -->
+    <div class="modal fade" id="Modal3" tabindex="-1" aria-labelledby="Modal3Label" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="Modal3Label">Porto x XV de Jau</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Detalhes do jogo Porto x XV de Jau: A partida foi realizada em 5 de abril de 2025. O jogo terminou 1-1, onde conseguimos manter o empate na casa do adversário.</p>
+                    <p>Comentários: Jogo muito equilibrado, com a defesa trabalhando intensamente, garantindo o empate no final.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="container py-5 text-center">
+        <h2>Entre em contato</h2>
+        <div>
+            <a href="https://instagram.com/kauanzn_08" class="btn btn-outline-dark">Instagram</a>
+        </div>
+        <p class="my-5">© Copyright 2025. Produzido por Kauan Matheus</p>
+    </footer>
+
+    <!-- Scripts Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
 </body>
 </html>
